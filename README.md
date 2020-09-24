@@ -9,7 +9,7 @@ Simple stress-management tool for WFH.
 - [Fast.ai library](https://docs.fast.ai/install.html) <br/> 
 - [Dlib](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/) <br/>
 - [OpenCV](https://pypi.org/project/opencv-python/) <br/>
-- python3
+- python3.7+
 
 
 ## Detect facial expression from live video
