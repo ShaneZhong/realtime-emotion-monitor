@@ -42,15 +42,15 @@ args = vars(ap.parse_args())
 print(os.getcwd())
 
 # Set path to your project directory
-path = '/Users/szhong/Documents/GitHub/EmotionMonitor/'
+path = '/workspace'
 
 # Set up directories
 model_dir = 'src/model/'
-classifier_dir = path + model_dir + "haarcascade_frontalface_default.xml"
-learner_dir = path + model_dir
-shape_predictor_dir = path + model_dir + "shape_predictor_68_face_landmarks.dat"
+classifier_dir = os.path.join(path, model_dir, "haarcascade_frontalface_default.xml")
+learner_dir = os.path.join(path, model_dir)
+shape_predictor_dir = os.path.join(path, model_dir, "shape_predictor_68_face_landmarks.dat")
 
-sound_dir = path + 'src/sound/sound1.mp3'
+sound_dir = os.path.join(path, 'src/sound/sound1.mp3')
 SOUND_TIME_INTERVAL = 20  # in seconds
 
 learn = load_learner(path=learner_dir, file='export.pkl')
